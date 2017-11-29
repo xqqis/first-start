@@ -1,1 +1,4 @@
-ll |grep "^-"|wc -l
+ll |grep "^-"|wc -l  #count file
+hive -e 'use databases;show tables;'>> file
+for i in `caat file`;do if [[ $i == XXX ]];then echo $i >>file ; fi done
+hive -S -f file
